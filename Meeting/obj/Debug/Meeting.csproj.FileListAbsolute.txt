@@ -1,0 +1,11 @@
+C:\Users\dmkhu\source\repos\Meeting\Meeting\bin\Debug\Meeting.exe.config
+C:\Users\dmkhu\source\repos\Meeting\Meeting\bin\Debug\Meeting.exe
+C:\Users\dmkhu\source\repos\Meeting\Meeting\bin\Debug\Meeting.pdb
+C:\Users\dmkhu\source\repos\Meeting\Meeting\obj\Debug\Meeting.csproj.AssemblyReference.cache
+C:\Users\dmkhu\source\repos\Meeting\Meeting\obj\Debug\Meeting.Form1.resources
+C:\Users\dmkhu\source\repos\Meeting\Meeting\obj\Debug\Meeting.Properties.Resources.resources
+C:\Users\dmkhu\source\repos\Meeting\Meeting\obj\Debug\Meeting.csproj.GenerateResource.cache
+C:\Users\dmkhu\source\repos\Meeting\Meeting\obj\Debug\Meeting.csproj.CoreCompileInputs.cache
+C:\Users\dmkhu\source\repos\Meeting\Meeting\obj\Debug\Meeting.exe
+C:\Users\dmkhu\source\repos\Meeting\Meeting\obj\Debug\Meeting.pdb
+C:\Users\dmkhu\source\repos\Meeting\Meeting\obj\Debug\Meeting.Main.resources
