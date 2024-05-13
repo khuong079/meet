@@ -34,7 +34,10 @@ namespace Meeting
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            command = connection.CreateCommand();
+            command.CommandText = "delete from Metting where MettingID = '"+txtMeetingID.Text+"'";
+            command.ExecuteNonQuery();
+            loaddata();
         }
 
         private void btnReload_Click(object sender, EventArgs e)
@@ -52,14 +55,14 @@ namespace Meeting
         private void btnAdd_Click(object sender, EventArgs e)
         {
             command = connection.CreateCommand();
-            command.CommandText = "insert into Metting values('"+txtIDUser.Text+"','"+txtMeetingID+"' , '"+txtTitle+"' , '"+txtDate+"' , '"+txtTime+"' , '"+txtLocation+"' , '"+txtMeetingStatus+"' , '"+txtTimeStart+"' , '"+txtTimeEnd+"')";
+            command.CommandText = "insert into Metting values('"+txtMeetingID.Text+ "', '" + txtTitle.Text+"' , '"+txtDate.Text +"' , '"+txtTime.Text +"' , '"+txtLocation.Text +"' , '"+txtMeetingStatus.Text+ "', '"+txtIDUser.Text+"' , '" + txtTimeStart.Text +"' , '"+txtTimeEnd.Text+"')";
             command.ExecuteNonQuery();
             loaddata();
         }
 
         private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            txtMeetingID.ReadOnly = true;
             int i;
             i = dgv.CurrentRow.Index;
             txtIDUser.Text = dgv.Rows[i].Cells[6].Value.ToString();
@@ -71,6 +74,14 @@ namespace Meeting
             txtMeetingStatus.Text = dgv.Rows[i].Cells[5].Value.ToString();
             txtTimeStart.Text = dgv.Rows[i].Cells[7].Value.ToString();
             txtTimeEnd.Text = dgv.Rows[i].Cells[8].Value.ToString();
+        }
+
+        private void btnFix_Click(object sender, EventArgs e)
+        {
+            command = connection.CreateCommand();
+            command.CommandText = "update Metting set MettingID = '" + txtMeetingID.Text + "',Title = '" + txtTitle.Text + "' , Date = '" + txtDate.Text + "' , Time = '" + txtTime.Text + "' , Location = '" + txtLocation.Text + "' , Meetingstatus = '" + txtMeetingStatus.Text + "', IDuser = '" + txtIDUser.Text + "' , TimeStart = '" + txtTimeStart.Text + "' , TimeEnd = '" + txtTimeEnd.Text + "' where MettingID = '"+txtMeetingID.Text+"'";
+            command.ExecuteNonQuery();
+            loaddata();
         }
     }
 }
