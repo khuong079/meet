@@ -23,3 +23,4 @@ C:\Users\Admin\Source\Repos\meet\Meeting\bin\Debug\Meeting.exe.config
 C:\Users\Admin\Source\Repos\meet\Meeting\bin\Debug\Meeting.exe
 C:\Users\Admin\Source\Repos\meet\Meeting\bin\Debug\Meeting.pdb
 C:\Users\Admin\source\repos\meet\Meeting\obj\Debug\Meeting.FormTaoTaiKhoan.resources
+C:\Users\Admin\Source\Repos\meet\Meeting\obj\Debug\Meeting.FormThongKe.resources
